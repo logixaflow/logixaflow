@@ -1,86 +1,102 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
   <defs>
-    <!-- Background gradient -->
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#050810"/>
-      <stop offset="40%" stop-color="#064E3B" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#020408"/>
+    <linearGradient id="lbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020d07"/>
+      <stop offset="50%" stop-color="#042617"/>
+      <stop offset="100%" stop-color="#010804"/>
     </linearGradient>
-    <!-- Logo glow -->
-    <radialGradient id="lglow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#A7F3D0" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#A7F3D0" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Right glow -->
-    <radialGradient id="rglow" cx="80%" cy="50%" r="40%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="gblur"><feGaussianBlur stdDeviation="20"/></filter>
-    <filter id="sblur"><feGaussianBlur stdDeviation="6"/></filter>
+    <linearGradient id="laccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
+    </linearGradient>
+    <filter id="lglow"><feGaussianBlur stdDeviation="8" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1500" height="500" fill="url(#bg)"/>
-  <rect width="1500" height="500" fill="url(#rglow)"/>
+  <!-- Canvas Base -->
+  <rect width="1500" height="500" fill="url(#lbg)"/>
 
-  <!-- Star field (subtle dots) -->
-  <g opacity="0.4" fill="white">
-    <circle cx="200" cy="80" r="1"/><circle cx="400" cy="40" r="1.5"/>
-    <circle cx="650" cy="90" r="1"/><circle cx="900" cy="30" r="1.5"/>
-    <circle cx="1100" cy="70" r="1"/><circle cx="1300" cy="50" r="1.5"/>
-    <circle cx="1400" cy="110" r="1"/><circle cx="750" cy="470" r="1.5"/>
-    <circle cx="300" cy="420" r="1"/><circle cx="1200" cy="430" r="1"/>
-    <circle cx="100" cy="300" r="1.5"/><circle cx="1450" cy="280" r="1"/>
-    <circle cx="500" cy="460" r="1"/><circle cx="850" cy="20" r="1"/>
+  <!-- Cyber Matrix Circuit Lines Horizontal & Vertical -->
+  <g opacity="0.2" stroke="#00ff88" stroke-width="1.5" fill="none">
+    <path d="M 0,100 L 400,100 L 450,150 L 1500,150"/>
+    <path d="M 0,400 L 300,400 L 350,350 L 1500,350"/>
+    <circle cx="450" cy="150" r="4" fill="#00ff88"/>
+    <circle cx="350" cy="350" r="4" fill="#00ff88"/>
   </g>
 
-  <!-- Left glow blob for logo -->
-  <ellipse cx="230" cy="250" rx="180" ry="180" fill="url(#lglow)" filter="url(#gblur)"/>
+  <!-- Left: Multi-Agent Pipeline Orchestration Hub -->
+  <g transform="translate(190, 250)">
+    <!-- Outer Hex Shield -->
+    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" fill="#031f13" stroke="#10b981" stroke-width="2.5" filter="url(#lglow)"/>
+    <polygon points="0,-100 86,-50 86,50 0,100 -86,50 -86,-50" fill="none" stroke="#00ff88" stroke-width="1.5" stroke-dasharray="6 4"/>
 
-  <!-- Logo circle -->
-  <circle cx="230" cy="250" r="150" fill="#050810" opacity="0.7"/>
-  <circle cx="230" cy="250" r="148" fill="none" stroke="#6EE7B7" stroke-width="2" opacity="0.5"/>
-  <circle cx="230" cy="250" r="130" fill="none" stroke="#10B981" stroke-width="1" opacity="0.3"/>
-  <!-- Logo gradient fill -->
-  <defs>
-    <radialGradient id="lgfill" cx="40%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#064E3B" stop-opacity="0.95"/>
-    </radialGradient>
-  </defs>
-  <circle cx="230" cy="250" r="128" fill="url(#lgfill)"/>
-  <!-- Initials -->
-  <text x="230" y="275" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="72" font-weight="900" fill="white"
-        text-anchor="middle" letter-spacing="4">LF</text>
-  <line x1="175" y1="300" x2="285" y2="300" stroke="#6EE7B7" stroke-width="2" opacity="0.6"/>
+    <!-- Central Agent Core -->
+    <rect x="-40" y="-40" width="80" height="80" rx="12" fill="#063823" stroke="#00ff88" stroke-width="3" filter="url(#lglow)"/>
+    
+    <!-- Flow Direction Arrows -->
+    <path d="M -75,0 L -50,0 M -55,-6 L -49,0 L -55,6" stroke="#00ff88" stroke-width="2.5" fill="none"/>
+    <path d="M 50,0 L 75,0 M 69,-6 L 75,0 L 69,6" stroke="#00ff88" stroke-width="2.5" fill="none"/>
+    <path d="M 0,-75 L 0,-50 M -6,-55 L 0,-49 L 6,-55" stroke="#00ff88" stroke-width="2.5" fill="none"/>
+    <path d="M 0,50 L 0,75 M -6,69 L 0,75 L 6,69" stroke="#00ff88" stroke-width="2.5" fill="none"/>
 
-  <!-- Vertical divider -->
-  <line x1="430" y1="80" x2="430" y2="420" stroke="#6EE7B7" stroke-width="1" opacity="0.25"/>
+    <!-- Core Symbol -->
+    <polygon points="0,-18 16,-9 16,9 0,18 -16,9 -16,-9" fill="#00ff88"/>
+  </g>
 
-  <!-- Project Name -->
-  <text x="490" y="200" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="80" font-weight="900" fill="white" letter-spacing="2">LOGIXA FLOW</text>
-  <!-- Accent underline -->
-  <rect x="490" y="220" width="500" height="3" rx="2" fill="#10B981" opacity="0.8"/>
-  <rect x="490" y="220" width="150" height="3" rx="2" fill="#6EE7B7"/>
+  <!-- Right: Pipeline Flow Stages (●──►◈──►▲──►◼) -->
+  <g transform="translate(1060, 200)">
+    <line x1="30" y1="50" x2="280" y2="50" stroke="#10b981" stroke-width="3" stroke-dasharray="8 6"/>
+    
+    <g transform="translate(30, 50)">
+      <circle cx="0" cy="0" r="22" fill="#063823" stroke="#10b981" stroke-width="2"/>
+      <circle cx="0" cy="0" r="8" fill="#00ff88" filter="url(#lglow)"/>
+      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#6ee7b7" text-anchor="middle">INGEST</text>
+    </g>
 
-  <!-- Tagline -->
-  <text x="490" y="290" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="36" font-weight="400" fill="#6EE7B7" letter-spacing="1" opacity="0.95">Multi-Agent Workflow Automation</text>
+    <g transform="translate(115, 50)">
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#063823" stroke="#00ff88" stroke-width="2" filter="url(#lglow)"/>
+      <polygon points="0,-8 8,0 0,8 -8,0" fill="#00ff88"/>
+      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#6ee7b7" text-anchor="middle">ROUTE</text>
+    </g>
 
-  <!-- Sub tags -->
-  <text x="490" y="345" font-family="'Segoe UI', Arial, sans-serif"
-        font-size="22" font-weight="300" fill="white" opacity="0.45">LLM Routing · RAG · Orchestration · FastAPI</text>
+    <g transform="translate(200, 50)">
+      <polygon points="0,-22 20,16 -20,16" fill="#063823" stroke="#10b981" stroke-width="2"/>
+      <circle cx="0" cy="2" r="6" fill="#00ff88"/>
+      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#6ee7b7" text-anchor="middle">EXEC</text>
+    </g>
 
-  <!-- Bottom accent line full width -->
-  <rect x="0" y="490" width="1500" height="4" rx="0" fill="#10B981" opacity="0.6"/>
-  <rect x="0" y="490" width="300" height="4" fill="#6EE7B7" opacity="0.9"/>
+    <g transform="translate(285, 50)">
+      <rect x="-18" y="-18" width="36" height="36" rx="6" fill="#063823" stroke="#00ff88" stroke-width="2" filter="url(#lglow)"/>
+      <circle cx="0" cy="0" r="6" fill="#ffffff"/>
+      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#6ee7b7" text-anchor="middle">DISPATCH</text>
+    </g>
+  </g>
 
-  <!-- Right side: decorative rings -->
-  <circle cx="1300" cy="250" r="120" fill="none" stroke="#10B981" stroke-width="1" opacity="0.15"/>
-  <circle cx="1300" cy="250" r="80" fill="none" stroke="#6EE7B7" stroke-width="1" opacity="0.1"/>
-  <circle cx="1300" cy="250" r="40" fill="#10B981" opacity="0.08"/>
-  <circle cx="1300" cy="250" r="12" fill="#10B981" opacity="0.3"/>
+  <!-- Typography & Badges -->
+  <g transform="translate(390, 160)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="310" height="30" rx="6" fill="#063823" stroke="#00ff88" stroke-width="1.5"/>
+    <text x="155" y="20" font-family="'Consolas', monospace" font-size="12" font-weight="700" fill="#00ff88" text-anchor="middle" letter-spacing="2">[ MULTI-AGENT ORCHESTRATION ]</text>
+
+    <!-- Main Title -->
+    <text x="0" y="85" font-family="'Segoe UI', 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="4">LOGIXA FLOW</text>
+    
+    <!-- Accent Line -->
+    <rect x="0" y="105" width="620" height="4" rx="2" fill="url(#laccent)"/>
+
+    <!-- Tagline -->
+    <text x="0" y="150" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" letter-spacing="1">Multi-Agent Workflow Automation &amp; Distributed LLM Routing</text>
+    
+    <!-- Sub-pills -->
+    <g transform="translate(0, 185)" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">
+      <rect x="0" y="0" width="145" height="28" rx="6" fill="#042013" stroke="#10b981" stroke-width="1"/>
+      <text x="72" y="18" fill="#a7f3d0" text-anchor="middle">AGENT ROUTING</text>
+      <rect x="160" y="0" width="145" height="28" rx="6" fill="#042013" stroke="#10b981" stroke-width="1"/>
+      <text x="232" y="18" fill="#a7f3d0" text-anchor="middle">RAG PIPELINES</text>
+      <rect x="320" y="0" width="145" height="28" rx="6" fill="#042013" stroke="#10b981" stroke-width="1"/>
+      <text x="392" y="18" fill="#a7f3d0" text-anchor="middle">REDIS BROKER</text>
+      <rect x="480" y="0" width="145" height="28" rx="6" fill="#042013" stroke="#10b981" stroke-width="1"/>
+      <text x="552" y="18" fill="#a7f3d0" text-anchor="middle">FASTAPI ENGINE</text>
+    </g>
+  </g>
 </svg>
