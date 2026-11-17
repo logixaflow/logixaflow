@@ -1,101 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
   <defs>
-    <linearGradient id="lbg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a1628"/>
-      <stop offset="50%" stop-color="#18233a"/>
-      <stop offset="100%" stop-color="#060e1a"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0D1F3C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0A1628;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="laccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f97316"/>
-      <stop offset="50%" stop-color="#fb923c"/>
-      <stop offset="100%" stop-color="#fdba74"/>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F97316;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#F97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F97316;stop-opacity:0" />
     </linearGradient>
-    <filter id="lglow"><feGaussianBlur stdDeviation="8" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F97316" />
+      <stop offset="100%" style="stop-color:#FB923C" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
-  <!-- Canvas Base -->
-  <rect width="1500" height="500" fill="url(#lbg)"/>
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)"/>
 
-  <!-- Cyber Matrix Circuit Lines in Orange -->
-  <g opacity="0.3" stroke="#f97316" stroke-width="1.5" fill="none">
-    <path d="M 0,100 L 400,100 L 450,150 L 1500,150"/>
-    <path d="M 0,400 L 300,400 L 350,350 L 1500,350"/>
-    <circle cx="450" cy="150" r="4" fill="#f97316"/>
-    <circle cx="350" cy="350" r="4" fill="#fb923c"/>
+  <!-- Grid lines -->
+  <g opacity="0.06" stroke="#F97316" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="900" y1="0" x2="900" y2="400"/>
   </g>
 
-  <!-- Left: Multi-Agent Pipeline Hub in Orange -->
-  <g transform="translate(190, 250)">
-    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" fill="#1c1626" stroke="#f97316" stroke-width="2.5" filter="url(#lglow)"/>
-    <polygon points="0,-100 86,-50 86,50 0,100 -86,50 -86,-50" fill="none" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <!-- Accent glow lines -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#accent)" opacity="0.8"/>
+  <rect x="0" y="398" width="1200" height="2" fill="url(#accent)" opacity="0.8"/>
 
-    <!-- Central Agent Core -->
-    <rect x="-40" y="-40" width="80" height="80" rx="12" fill="#2d1d2b" stroke="#f97316" stroke-width="3" filter="url(#lglow)"/>
-    
-    <!-- Flow Direction Arrows -->
-    <path d="M -75,0 L -50,0 M -55,-6 L -49,0 L -55,6" stroke="#fb923c" stroke-width="2.5" fill="none"/>
-    <path d="M 50,0 L 75,0 M 69,-6 L 75,0 L 69,6" stroke="#fb923c" stroke-width="2.5" fill="none"/>
-    <path d="M 0,-75 L 0,-50 M -6,-55 L 0,-49 L 6,-55" stroke="#fb923c" stroke-width="2.5" fill="none"/>
-    <path d="M 0,50 L 0,75 M -6,69 L 0,75 L 6,69" stroke="#fb923c" stroke-width="2.5" fill="none"/>
+  <!-- Center glow orb -->
+  <circle cx="200" cy="200" r="120" fill="#F97316" opacity="0.04" filter="url(#glow2)"/>
+  <circle cx="200" cy="200" r="70" fill="#F97316" opacity="0.08" filter="url(#glow2)"/>
 
-    <!-- Core Symbol -->
-    <polygon points="0,-18 16,-9 16,9 0,18 -16,9 -16,-9" fill="#f97316"/>
+  <!-- Hexagon logo shape -->
+  <g transform="translate(140, 131)" filter="url(#glow)">
+    <polygon points="60,0 120,34 120,104 60,138 0,104 0,34" fill="none" stroke="#F97316" stroke-width="2" opacity="0.9"/>
+    <polygon points="60,15 108,42 108,96 60,123 12,96 12,42" fill="none" stroke="#F97316" stroke-width="1" opacity="0.4"/>
+    <line x1="30" y1="69" x2="90" y2="69" stroke="#F97316" stroke-width="2.5" opacity="0.9"/>
+    <line x1="60" y1="40" x2="60" y2="100" stroke="#F97316" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="60" cy="69" r="8" fill="#F97316" opacity="0.9"/>
+    <circle cx="30" cy="69" r="4" fill="#F97316" opacity="0.7"/>
+    <circle cx="90" cy="69" r="4" fill="#F97316" opacity="0.7"/>
+    <circle cx="60" cy="40" r="4" fill="#F97316" opacity="0.7"/>
+    <circle cx="60" cy="100" r="4" fill="#F97316" opacity="0.7"/>
   </g>
 
-  <!-- Right: Pipeline Flow Stages in Orange -->
-  <g transform="translate(1060, 200)">
-    <line x1="30" y1="50" x2="280" y2="50" stroke="#f97316" stroke-width="3" stroke-dasharray="8 6"/>
-    
-    <g transform="translate(30, 50)">
-      <circle cx="0" cy="0" r="22" fill="#1e1828" stroke="#f97316" stroke-width="2"/>
-      <circle cx="0" cy="0" r="8" fill="#fb923c" filter="url(#lglow)"/>
-      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#fdba74" text-anchor="middle">INGEST</text>
-    </g>
+  <!-- Main title -->
+  <text x="320" y="175" font-family="'Courier New', monospace" font-size="68" font-weight="900" letter-spacing="6" fill="url(#text-grad)" filter="url(#glow)">LOGIXA FLOW</text>
 
-    <g transform="translate(115, 50)">
-      <polygon points="0,-22 22,0 0,22 -22,0" fill="#1e1828" stroke="#fb923c" stroke-width="2" filter="url(#lglow)"/>
-      <polygon points="0,-8 8,0 0,8 -8,0" fill="#f97316"/>
-      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#fdba74" text-anchor="middle">ROUTE</text>
-    </g>
+  <!-- Subtitle -->
+  <text x="322" y="225" font-family="'Courier New', monospace" font-size="20" letter-spacing="3" fill="#CBD5E1" opacity="0.8">Multi-Agent Workflow Automation &amp; Distributed LLM Routing</text>
 
-    <g transform="translate(200, 50)">
-      <polygon points="0,-22 20,16 -20,16" fill="#1e1828" stroke="#f97316" stroke-width="2"/>
-      <circle cx="0" cy="2" r="6" fill="#fb923c"/>
-      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#fdba74" text-anchor="middle">EXEC</text>
-    </g>
+  <!-- Tags -->
+  <g transform="translate(322, 265)">
+    <rect x="0" y="0" width="140" height="28" rx="4" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="70" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" letter-spacing="1">AGENT ROUTING</text>
 
-    <g transform="translate(285, 50)">
-      <rect x="-18" y="-18" width="36" height="36" rx="6" fill="#1e1828" stroke="#fb923c" stroke-width="2" filter="url(#lglow)"/>
-      <circle cx="0" cy="0" r="6" fill="#ffffff"/>
-      <text x="0" y="42" font-family="'Consolas', monospace" font-size="11" fill="#fdba74" text-anchor="middle">DISPATCH</text>
-    </g>
+    <rect x="150" y="0" width="120" height="28" rx="4" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="210" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" opacity="0.9" letter-spacing="1">RAG PIPELINES</text>
+
+    <rect x="280" y="0" width="110" height="28" rx="4" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="335" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" opacity="0.9" letter-spacing="1">MULTI-NODE</text>
+
+    <rect x="400" y="0" width="130" height="28" rx="4" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="465" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" opacity="0.9" letter-spacing="1">DISTRIBUTED</text>
   </g>
 
-  <!-- Typography & Badges -->
-  <g transform="translate(390, 160)">
-    <!-- Badge -->
-    <rect x="0" y="0" width="310" height="30" rx="6" fill="#2b1824" stroke="#f97316" stroke-width="1.5"/>
-    <text x="155" y="20" font-family="'Consolas', monospace" font-size="12" font-weight="700" fill="#fb923c" text-anchor="middle" letter-spacing="2">[ MULTI-AGENT ORCHESTRATION ]</text>
+  <!-- Right decorative dots -->
+  <g opacity="0.5">
+    <circle cx="1050" cy="120" r="3" fill="#F97316"/>
+    <circle cx="1080" cy="150" r="2" fill="#F97316" opacity="0.6"/>
+    <circle cx="1100" cy="100" r="2" fill="#F97316" opacity="0.4"/>
+    <circle cx="1130" cy="200" r="4" fill="#F97316" opacity="0.5"/>
+    <circle cx="1070" cy="270" r="2" fill="#F97316" opacity="0.4"/>
+    <circle cx="1150" cy="300" r="3" fill="#F97316" opacity="0.3"/>
+  </g>
 
-    <!-- Main Title -->
-    <text x="0" y="85" font-family="'Segoe UI', 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="#ffffff" letter-spacing="4">LOGIXA FLOW</text>
-    
-    <!-- Accent Line -->
-    <rect x="0" y="105" width="620" height="4" rx="2" fill="url(#laccent)"/>
-
-    <!-- Tagline -->
-    <text x="0" y="150" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="500" fill="#94a3b8" letter-spacing="1">Multi-Agent Workflow Automation &amp; Distributed LLM Routing</text>
-    
-    <!-- Sub-pills -->
-    <g transform="translate(0, 185)" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">
-      <rect x="0" y="0" width="145" height="28" rx="6" fill="#1c1826" stroke="#f97316" stroke-width="1"/>
-      <text x="72" y="18" fill="#fed7aa" text-anchor="middle">AGENT ROUTING</text>
-      <rect x="160" y="0" width="145" height="28" rx="6" fill="#1c1826" stroke="#f97316" stroke-width="1"/>
-      <text x="232" y="18" fill="#fed7aa" text-anchor="middle">RAG PIPELINES</text>
-      <rect x="320" y="0" width="145" height="28" rx="6" fill="#1c1826" stroke="#f97316" stroke-width="1"/>
-      <text x="392" y="18" fill="#fed7aa" text-anchor="middle">REDIS BROKER</text>
-      <rect x="480" y="0" width="145" height="28" rx="6" fill="#1c1826" stroke="#f97316" stroke-width="1"/>
-      <text x="552" y="18" fill="#fed7aa" text-anchor="middle">FASTAPI ENGINE</text>
-    </g>
+  <!-- Flow lines right side -->
+  <g opacity="0.2" stroke="#F97316" stroke-width="1" stroke-dasharray="4,4">
+    <line x1="1000" y1="150" x2="1180" y2="150"/>
+    <line x1="1000" y1="200" x2="1180" y2="200"/>
+    <line x1="1000" y1="250" x2="1180" y2="250"/>
   </g>
 </svg>
