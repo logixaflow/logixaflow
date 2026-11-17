@@ -1,71 +1,35 @@
-<!-- LOGIXA FLOW | GitHub Profile README -->
 <p align="center">
-  <img src="assets/profile-banner.svg" alt="Logixa Flow — Build Secure. Think Intelligent. Engineer the Future." width="100%" />
+  <img src="https://raw.githubusercontent.com/logixaflow/logixaflow/main/assets/banner.svg" alt="Logixa Flow — Multi-Agent Workflow Automation" width="100%" />
 </p>
 
-<h1 align="center">LOGIXA FLOW</h1>
 <p align="center">
-  <strong>Founder · Software Engineering · Cybersecurity · AI Engineering</strong>
-</p>
-<p align="center">
-  <a href="https://github.com/logixaflow">GitHub</a> ·
-  <a href="https://github.com/logixaflow/Logixa-Flow">Featured Project</a>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/LLM-FF6B6B?style=flat-square&logo=llm&logoColor=white" alt="LLM" />
+  <img src="https://img.shields.io/badge/AI-7C3AED?style=flat-square&logo=ai&logoColor=white" alt="AI" />
+  
 </p>
 
 ---
 
-## About
+<p align="center">
+  <strong>An AI-powered multi-agent orchestration and workflow automation platform with LLM routing, RAG pipelines, and real-time monitoring.</strong>
+</p>
 
-I'm the founder of **Logixa Flow**. I’m developing my skills and building software with an emphasis on secure engineering, thoughtful architecture, and practical AI applications.
-
-My current interests:
-
-- Secure software development and application security
-- Backend systems, APIs, and system design
-- AI engineering and intelligent automation
-- Testing, reliability, and maintainable code
-- Open-source collaboration
-
-## Current Focus
-
-- Building and improving the **Logixa Flow** project
-- Strengthening application security practices
-- Learning scalable backend and software architecture
-- Exploring practical AI-powered workflows
-- Improving code quality through testing and review
-
-## Featured Project
-
-### [Logixa Flow](https://github.com/logixaflow/Logixa-Flow)
-
-My primary project: an ongoing software engineering effort focused on secure, reliable, and intelligent software systems.
-
-[View the repository →](https://github.com/logixaflow/Logixa-Flow)
-
-## Engineering Interests
-
-| Domain | Areas of interest |
-| --- | --- |
-| Software Engineering | Application development, clean code |
-| Cybersecurity | Secure coding, vulnerability prevention |
-| AI Engineering | AI-powered applications, automation |
-| Backend Engineering | APIs, architecture, data flow |
-| Quality Engineering | Testing, reliability, maintainability |
-
-## Principles
-
-- **Security by design** — consider security throughout development.
-- **Clarity over cleverness** — prefer understandable, maintainable solutions.
-- **Test before shipping** — validate behavior and edge cases.
-- **Keep improving** — learn, measure, and iterate.
-
-## Connect
-
-- GitHub: [@logixaflow](https://github.com/logixaflow)
-- Project: [Logixa-Flow](https://github.com/logixaflow/Logixa-Flow)
+<p align="center">
+  LLM routing · orchestration · RAG · automation
+</p>
 
 ---
 
 <p align="center">
-  <strong>BUILD SECURE. THINK INTELLIGENT. ENGINEER THE FUTURE.</strong>
+  <a href="https://logixa-flow.vercel.app">
+    <img src="https://img.shields.io/badge/Website-Live-10B981?style=for-the-badge" alt="Website" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/logixaflow/Logixa-Flow">
+    <img src="https://img.shields.io/badge/Repository-GitHub-181717?style=for-the-badge&logo=github" alt="Repository" />
+  </a>
 </p>
