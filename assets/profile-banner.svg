@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Logixa Flow</title>
+  <desc id="desc">Dark cyberpunk banner with neon cyan and violet circuit motifs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070B16"/>
+      <stop offset="0.55" stop-color="#11102A"/>
+      <stop offset="1" stop-color="#071A25"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#28E7F2"/>
+      <stop offset="0.55" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#28E7F2"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#6C7B9A" stroke-opacity=".13" stroke-width="1"/>
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+  <g fill="none" stroke="url(#neon)" stroke-width="2" opacity=".72" filter="url(#glow)">
+    <path d="M0 80H170L215 125H310M1200 70H1030L980 120H900"/>
+    <path d="M0 285H150L205 230H300M1200 290H1050L995 235H900"/>
+    <path d="M90 0V55L130 95M1110 0V55L1070 95"/>
+    <path d="M80 360V310L130 260M1120 360V310L1070 260"/>
+  </g>
+  <g fill="#28E7F2" opacity=".9">
+    <circle cx="170" cy="80" r="4"/><circle cx="1030" cy="70" r="4"/>
+    <circle cx="150" cy="285" r="4"/><circle cx="1050" cy="290" r="4"/>
+  </g>
+  <rect x="250" y="72" width="700" height="216" rx="18" fill="#080D1B" fill-opacity=".55" stroke="#8B5CF6" stroke-opacity=".45"/>
+  <text x="600" y="163" text-anchor="middle" fill="#F4F7FF" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" letter-spacing="8">LOGIXA FLOW</text>
+  <path d="M390 190H810" stroke="url(#neon)" stroke-width="3" filter="url(#glow)"/>
+  <text x="600" y="229" text-anchor="middle" fill="#B9C7E8" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="3">SECURE SOFTWARE · CYBERSECURITY · AI</text>
+  <text x="600" y="260" text-anchor="middle" fill="#28E7F2" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2">BUILD SECURE. THINK INTELLIGENT. ENGINEER THE FUTURE.</text>
+</svg>
