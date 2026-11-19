@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- PROJECT BANNER -->
-<img src="assets/banner.svg" alt="Logixa Flow — Multi-Agent Workflow Automation" width="100%" />
+<img src="assets/banner.svg" alt="Logixa Flow — AI-Powered Flow Automation Platform" width="100%" />
 
 <br/><br/>
 
@@ -60,7 +60,7 @@
         <img src="https://github-readme-stats.vercel.app/api?username=logixaflow&theme=github_dark&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" width="95%" />
       </td>
       <td align="center" style="background-color: #0b0f19; padding: 12px;">
-        <img src="https://streak-stats.demolab.com/?user=logixaflow&theme=github_dark&hide_border=true" alt="Streak Stats" width="95%" />
+        <img src="https://streak-stats.demolab.com/?user=logixaflow&theme=github-dark&hide_border=true" alt="Streak Stats" width="95%" />
       </td>
     </tr>
     <tr>
@@ -83,7 +83,7 @@
   <tbody>
     <tr>
       <td align="center" style="background-color: #0b0f19; padding: 14px;">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=logixaflow&theme=github_dark&hide_border=true&area=true" alt="Activity Graph" width="98%" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=logixaflow&theme=github-dark&hide_border=true&area=true" alt="Activity Graph" width="98%" />
       </td>
     </tr>
   </tbody>
