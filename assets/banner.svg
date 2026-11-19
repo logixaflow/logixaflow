@@ -1,98 +1,83 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">Logixa Flow — Multi-Agent Workflow Orchestration</title>
+  <desc id="desc">A dark green technology banner featuring the Logixa Flow LF monogram and a subtle connected workflow network.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0A1628;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#0D1F3C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0A1628;stop-opacity:1" />
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071610"/>
+      <stop offset=".55" stop-color="#0A2119"/>
+      <stop offset="1" stop-color="#06120E"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#F97316;stop-opacity:0" />
-      <stop offset="50%" style="stop-color:#F97316;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#F97316;stop-opacity:0" />
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6EE7B7"/>
+      <stop offset="1" stop-color="#10B981"/>
     </linearGradient>
-    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#F97316" />
-      <stop offset="100%" style="stop-color:#FB923C" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <radialGradient id="logoBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#064E3B"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#10B981" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="18"/>
     </filter>
-    <filter id="glow2">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="textGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="400" fill="url(#bg)"/>
-
-  <!-- Grid lines -->
-  <g opacity="0.06" stroke="#F97316" stroke-width="1">
-    <line x1="0" y1="100" x2="1200" y2="100"/>
-    <line x1="0" y1="200" x2="1200" y2="200"/>
-    <line x1="0" y1="300" x2="1200" y2="300"/>
-    <line x1="300" y1="0" x2="300" y2="400"/>
-    <line x1="600" y1="0" x2="600" y2="400"/>
-    <line x1="900" y1="0" x2="900" y2="400"/>
+  <rect width="1200" height="400" fill="url(#background)"/>
+  <ellipse cx="225" cy="200" rx="235" ry="190" fill="url(#halo)" filter="url(#softGlow)"/>
+  <path d="M0 324 C220 260 330 355 520 295 S900 235 1200 285" fill="none" stroke="#10B981" stroke-opacity=".09" stroke-width="1.5"/>
+  <path d="M0 345 C240 282 365 378 560 318 S940 258 1200 308" fill="none" stroke="#6EE7B7" stroke-opacity=".06" stroke-width="1"/>
+  <g stroke="#6EE7B7" stroke-opacity=".09" stroke-width="1">
+    <path d="M760 0V400 M900 0V400 M1040 0V400"/>
+    <path d="M650 100H1200 M650 200H1200 M650 300H1200"/>
   </g>
 
-  <!-- Accent glow lines -->
-  <rect x="0" y="0" width="1200" height="2" fill="url(#accent)" opacity="0.8"/>
-  <rect x="0" y="398" width="1200" height="2" fill="url(#accent)" opacity="0.8"/>
-
-  <!-- Center glow orb -->
-  <circle cx="200" cy="200" r="120" fill="#F97316" opacity="0.04" filter="url(#glow2)"/>
-  <circle cx="200" cy="200" r="70" fill="#F97316" opacity="0.08" filter="url(#glow2)"/>
-
-  <!-- Hexagon logo shape -->
-  <g transform="translate(140, 131)" filter="url(#glow)">
-    <polygon points="60,0 120,34 120,104 60,138 0,104 0,34" fill="none" stroke="#F97316" stroke-width="2" opacity="0.9"/>
-    <polygon points="60,15 108,42 108,96 60,123 12,96 12,42" fill="none" stroke="#F97316" stroke-width="1" opacity="0.4"/>
-    <line x1="30" y1="69" x2="90" y2="69" stroke="#F97316" stroke-width="2.5" opacity="0.9"/>
-    <line x1="60" y1="40" x2="60" y2="100" stroke="#F97316" stroke-width="2.5" opacity="0.9"/>
-    <circle cx="60" cy="69" r="8" fill="#F97316" opacity="0.9"/>
-    <circle cx="30" cy="69" r="4" fill="#F97316" opacity="0.7"/>
-    <circle cx="90" cy="69" r="4" fill="#F97316" opacity="0.7"/>
-    <circle cx="60" cy="40" r="4" fill="#F97316" opacity="0.7"/>
-    <circle cx="60" cy="100" r="4" fill="#F97316" opacity="0.7"/>
+  <!-- Logixa Flow monogram, matched to assets/logo.svg -->
+  <g transform="translate(105 92)">
+    <circle cx="100" cy="100" r="100" fill="#10B981" opacity=".12" filter="url(#softGlow)"/>
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#6EE7B7" stroke-width="2" opacity=".65"/>
+    <circle cx="100" cy="100" r="85" fill="none" stroke="#10B981" stroke-width="1" opacity=".55"/>
+    <circle cx="100" cy="100" r="82" fill="url(#logoBg)"/>
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#6EE7B7" stroke-width="1.5" opacity=".34"/>
+    <text x="100" y="111" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="800" letter-spacing="2" fill="#FFFFFF">LF</text>
+    <path d="M70 128H130" stroke="#A7F3D0" stroke-width="2" opacity=".75"/>
   </g>
 
-  <!-- Main title -->
-  <text x="320" y="175" font-family="'Courier New', monospace" font-size="68" font-weight="900" letter-spacing="6" fill="url(#text-grad)" filter="url(#glow)">LOGIXA FLOW</text>
-
-  <!-- Subtitle -->
-  <text x="322" y="225" font-family="'Courier New', monospace" font-size="20" letter-spacing="3" fill="#CBD5E1" opacity="0.8">Multi-Agent Workflow Automation &amp; Distributed LLM Routing</text>
-
-  <!-- Tags -->
-  <g transform="translate(322, 265)">
-    <rect x="0" y="0" width="140" height="28" rx="4" fill="#F97316" opacity="0.15" stroke="#F97316" stroke-width="1" stroke-opacity="0.6"/>
-    <text x="70" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" letter-spacing="1">AGENT ROUTING</text>
-
-    <rect x="150" y="0" width="120" height="28" rx="4" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="1" stroke-opacity="0.4"/>
-    <text x="210" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" opacity="0.9" letter-spacing="1">RAG PIPELINES</text>
-
-    <rect x="280" y="0" width="110" height="28" rx="4" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="1" stroke-opacity="0.4"/>
-    <text x="335" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" opacity="0.9" letter-spacing="1">MULTI-NODE</text>
-
-    <rect x="400" y="0" width="130" height="28" rx="4" fill="#F97316" opacity="0.1" stroke="#F97316" stroke-width="1" stroke-opacity="0.4"/>
-    <text x="465" y="19" font-family="monospace" font-size="12" fill="#F97316" text-anchor="middle" opacity="0.9" letter-spacing="1">DISTRIBUTED</text>
+  <g>
+    <text x="350" y="166" font-family="Inter, Arial, Helvetica, sans-serif" font-size="65" font-weight="800" letter-spacing="1.5" fill="#F4FFF9">LOGIXA</text>
+    <text x="350" y="232" font-family="Inter, Arial, Helvetica, sans-serif" font-size="65" font-weight="800" letter-spacing="1.5" fill="url(#mint)" filter="url(#textGlow)">FLOW</text>
+    <text x="354" y="272" font-family="Inter, Arial, Helvetica, sans-serif" font-size="17" font-weight="500" letter-spacing="2.2" fill="#C3D9CF">MULTI-AGENT WORKFLOW ORCHESTRATION</text>
+    <g transform="translate(354 302)" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1">
+      <rect width="128" height="29" rx="14.5" fill="#10B981" fill-opacity=".13" stroke="#10B981" stroke-opacity=".55"/>
+      <text x="64" y="19" text-anchor="middle" fill="#A7F3D0">AGENT ROUTING</text>
+      <rect x="140" width="132" height="29" rx="14.5" fill="#10B981" fill-opacity=".10" stroke="#10B981" stroke-opacity=".4"/>
+      <text x="206" y="19" text-anchor="middle" fill="#A7F3D0">RAG PIPELINES</text>
+      <rect x="284" width="142" height="29" rx="14.5" fill="#10B981" fill-opacity=".10" stroke="#10B981" stroke-opacity=".4"/>
+      <text x="355" y="19" text-anchor="middle" fill="#A7F3D0">SEMANTIC CACHE</text>
+      <rect x="438" width="150" height="29" rx="14.5" fill="#10B981" fill-opacity=".10" stroke="#10B981" stroke-opacity=".4"/>
+      <text x="513" y="19" text-anchor="middle" fill="#A7F3D0">RESILIENT QUEUES</text>
+    </g>
   </g>
 
-  <!-- Right decorative dots -->
-  <g opacity="0.5">
-    <circle cx="1050" cy="120" r="3" fill="#F97316"/>
-    <circle cx="1080" cy="150" r="2" fill="#F97316" opacity="0.6"/>
-    <circle cx="1100" cy="100" r="2" fill="#F97316" opacity="0.4"/>
-    <circle cx="1130" cy="200" r="4" fill="#F97316" opacity="0.5"/>
-    <circle cx="1070" cy="270" r="2" fill="#F97316" opacity="0.4"/>
-    <circle cx="1150" cy="300" r="3" fill="#F97316" opacity="0.3"/>
+  <!-- Subtle connected workflow motif -->
+  <g fill="none" stroke="#6EE7B7" stroke-width="1.5" stroke-opacity=".32">
+    <path d="M930 132H1010L1050 172H1120"/>
+    <path d="M930 200H1000L1040 240H1120"/>
+    <path d="M930 268H990L1030 228H1120"/>
+    <path d="M1010 132V200"/>
   </g>
-
-  <!-- Flow lines right side -->
-  <g opacity="0.2" stroke="#F97316" stroke-width="1" stroke-dasharray="4,4">
-    <line x1="1000" y1="150" x2="1180" y2="150"/>
-    <line x1="1000" y1="200" x2="1180" y2="200"/>
-    <line x1="1000" y1="250" x2="1180" y2="250"/>
+  <g fill="#10B981" stroke="#A7F3D0" stroke-width="1.2">
+    <circle cx="930" cy="132" r="5"/><circle cx="930" cy="200" r="5"/><circle cx="930" cy="268" r="5"/>
+    <circle cx="1010" cy="132" r="5"/><circle cx="1050" cy="172" r="5"/>
+    <circle cx="1000" cy="200" r="5"/><circle cx="1040" cy="240" r="5"/>
+    <circle cx="990" cy="268" r="5"/><circle cx="1030" cy="228" r="5"/>
+    <circle cx="1120" cy="172" r="5"/><circle cx="1120" cy="240" r="5"/><circle cx="1120" cy="228" r="5"/>
   </g>
+  <path d="M0 1H1200" stroke="#6EE7B7" stroke-opacity=".42"/>
+  <path d="M0 399H1200" stroke="#10B981" stroke-opacity=".28"/>
 </svg>
