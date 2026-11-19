@@ -1,16 +1,16 @@
 <div align="center">
 
 <!-- PROJECT BANNER -->
-<img src="https://raw.githubusercontent.com/logixaflow/logixaflow/main/assets/banner.svg" alt="Logixa Flow — Multi-Agent Workflow Automation" width="100%" />
+<img src="assets/banner.svg" alt="Logixa Flow — Multi-Agent Workflow Automation" width="100%" />
 
 <br/><br/>
 
 <!-- SYSTEM STATUS & CORE LINKS -->
-<a href="https://logixa-flow.vercel.app"><img src="https://img.shields.io/badge/System-Online-10b981?style=for-the-badge&logo=statuspage&logoColor=white" alt="Live System" /></a>
+<a href="https://logixa-flow.vercel.app"><img src="https://img.shields.io/badge/System-Online-00A3FF?style=for-the-badge&logo=statuspage&logoColor=white" alt="Live System" /></a>
 &nbsp;
 <a href="https://github.com/logixaflow/Logixa-Flow"><img src="https://img.shields.io/badge/Source_Repository-Public-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repo" /></a>
 &nbsp;
-<img src="https://img.shields.io/badge/Status-Active_Development-10b981?style=for-the-badge" alt="Status" />
+<img src="https://img.shields.io/badge/Status-Active_Development-FF6B00?style=for-the-badge" alt="Status" />
 
 <br/><br/>
 
@@ -57,15 +57,15 @@
   <tbody>
     <tr>
       <td align="center" style="background-color: #0b0f19; padding: 12px;">
-        <img src="https://github-readme-stats.vercel.app/api?username=logixaflow&theme=merko&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" width="95%" />
+        <img src="https://github-readme-stats.vercel.app/api?username=logixaflow&theme=github_dark&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" width="95%" />
       </td>
       <td align="center" style="background-color: #0b0f19; padding: 12px;">
-        <img src="https://streak-stats.demolab.com/?user=logixaflow&theme=merko&hide_border=true" alt="Streak Stats" width="95%" />
+        <img src="https://streak-stats.demolab.com/?user=logixaflow&theme=github_dark&hide_border=true" alt="Streak Stats" width="95%" />
       </td>
     </tr>
     <tr>
       <td align="center" colspan="2" style="background-color: #0b0f19; padding: 12px;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=logixaflow&theme=merko&layout=compact&hide_border=true" alt="Top Languages" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=logixaflow&theme=github_dark&layout=compact&hide_border=true" alt="Top Languages" />
       </td>
     </tr>
   </tbody>
@@ -83,7 +83,7 @@
   <tbody>
     <tr>
       <td align="center" style="background-color: #0b0f19; padding: 14px;">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=logixaflow&theme=merko&hide_border=true&area=true" alt="Activity Graph" width="98%" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=logixaflow&theme=github_dark&hide_border=true&area=true" alt="Activity Graph" width="98%" />
       </td>
     </tr>
   </tbody>
