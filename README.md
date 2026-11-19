@@ -57,15 +57,15 @@
   <tbody>
     <tr>
       <td align="center" style="background-color: #0b0f19; padding: 12px;">
-        <img src="https://github-readme-stats.vercel.app/api?username=logixaflow&theme=chartreuse-dark&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" width="95%" />
+        <img src="https://github-readme-stats.vercel.app/api?username=logixaflow&theme=merko&show_icons=true&hide_border=true&count_private=true" alt="GitHub Stats" width="95%" />
       </td>
       <td align="center" style="background-color: #0b0f19; padding: 12px;">
-        <img src="https://streak-stats.demolab.com/?user=logixaflow&theme=chartreuse-dark&hide_border=true" alt="Streak Stats" width="95%" />
+        <img src="https://streak-stats.demolab.com/?user=logixaflow&theme=merko&hide_border=true" alt="Streak Stats" width="95%" />
       </td>
     </tr>
     <tr>
       <td align="center" colspan="2" style="background-color: #0b0f19; padding: 12px;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=logixaflow&theme=chartreuse-dark&layout=compact&hide_border=true" alt="Top Languages" />
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=logixaflow&theme=merko&layout=compact&hide_border=true" alt="Top Languages" />
       </td>
     </tr>
   </tbody>
@@ -83,7 +83,7 @@
   <tbody>
     <tr>
       <td align="center" style="background-color: #0b0f19; padding: 14px;">
-        <img src="https://github-readme-activity-graph.vercel.app/graph?username=logixaflow&theme=chartreuse-dark&hide_border=true&area=true" alt="Activity Graph" width="98%" />
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=logixaflow&theme=merko&hide_border=true&area=true" alt="Activity Graph" width="98%" />
       </td>
     </tr>
   </tbody>
